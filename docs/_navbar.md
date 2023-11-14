@@ -1,5 +1,5 @@
 <!-- _navbar.md -->
 
-* [Начальная страница](/)
-* [npm](https://npmjs.com/package/easy-api.ts)
-* [Офиц. Дискорд сервер](https://discord.gg/fc6n37dCgY)
+* [Main page](/)
+* [Repository](https://github.com/Tirito6626/bashcord/tree/main)
+* [Discord server](https://dsc.gg/bashcord)

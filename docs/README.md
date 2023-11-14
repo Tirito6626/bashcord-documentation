@@ -1,44 +1,53 @@
-### EASY-API.TS
-Создайте свой собственный API с легкостью.
+![logo](https://cdn.discordapp.com/attachments/1129769809039609962/1139251618072772678/Polish_20230810_193803119.jpg)
+# bashcord
+ Unofficial discord API wrapper written in Bash
 
-![изображение](https://camo.githubusercontent.com/1b637c74e2bcd2feb02d7a3ca3d61263bed5d673dfd472ee663157db1d2000f6/68747470733a2f2f692e696d6775722e636f6d2f326b735a5342792e6a7067)
+## Features:
+- Lightweight
+- Easy to use
+- Use with any linux package
+- Easy to install
+- 2000 lines of bash, few lines of JS
+# Requirements
+[jq](https://jqlang.github.io/jq/download/)
+[nodejs](https://github.com/nodesource/distributions) 
+bash
+# Installation
+To install code, run this:
+```php
+git clone https://raw.githubusercontent.com/Tirito6626/bashcord.git
 
-## настройка апи
+```
+Now, lets create `main.sh` file:
+```bash
+#!/usr/bin/bash
+source /path/to/bashcord/src/bashcord
+token="YOUR TOKEN HERE"
+clientBuilder;
+ addToken $token
+ addIntents <intents, e.g. 33280>
+ 
+presenceBuilder;
+ addStatus <status, e.g. "online">
 
-```js
-import { API } from "easy-api.ts"; //используйте 'const { API } = require("easy-api.ts")' для JavaScript
-
-const api = new API({
-    port: process.env.PORT || 3000
-})
-
-api.routes.add({
-    path: '/color',
-    code: `
-    $ignore[Посмотрите документацию для того чтобы узнать как работает эта функция]
-    $send[200;canvas;$default]
-    $drawRect[0;0;512;512]
-    $color[$getQuery[hex]]
-    $createCanvas[512;512]
-    $if[$isValidHex[$getQuery[hex]]==false;400;{
-        error: "Вы ввели неправильный hex цвет"
-    }]
-    $if[$getQuery[hex]==undefined;400;{
-        error: "Не обнаружен hex параметр."
-    }]
-    `
-})
-
-// Используйте загрузчик...
-api.routes.load('./routes').then(() => {
-    console.log('АПИ загружено.')
-    api.connect() // Мы подключаемся к API, когда все загрузилось.
-})
+ #lets create startup command!
+ function startup {
+  messageBuilder; # creating message object
+      embedBuilder; # adding embed array
+        addDescription "Im alive!" # adding description to embed
+channel_message_send <put your channel id here> "$message_json" # sending our message object which is saved in $message_json
+ }
+onReady startup # letting bashcord now which function what function should be executed on startup
 ```
 
-## Вы должны знать...
-- Для использования вам нужен Nodejs версия которого выше или равна 14
-- Код читается снизу вверх.
-- Это оболочка express, расширенная пользовательскими функциями, такими как канвас, объекты, HTML и подобные.
-- У библиотеки есть баги.(отправь репорт если нашел)
-- Эта библиотека была сделана используя JavaScript и TypeScript.
+Note: if you want to run bashcord on Pterodactyl, you should change these lines in `/src/bashcord`
+```bash
+jq_binary="/path/to/jq"
+nodejs_binary="/path/to/node"
+npm_binary="/path/to/npm"
+```
+Also, if you want to disable autoupdate on startup, change this:
+```bash
+autoupdate=false
+```
+Also check [bashcord discord server](https://dsc.gg/bashcord) for future updates
