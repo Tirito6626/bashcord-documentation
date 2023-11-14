@@ -8,19 +8,16 @@
 - Use with any linux package
 - Easy to install
 - 2000 lines of bash, few lines of JS
-## Requirements
+## Requirements:
 - [jq](https://jqlang.github.io/jq/download/)
 - [nodejs](https://github.com/nodesource/distributions) 
-- bash
+- [bash](https://www.gnu.org/software/bash/)
 # Installation
 To install code, run this:
-
 ```php
 git clone https://raw.githubusercontent.com/Tirito6626/bashcord.git
 ```
-
 Now, lets create `main.sh` file:
-
 ```bash
 #!/usr/bin/bash
 source /path/to/bashcord/src/bashcord
