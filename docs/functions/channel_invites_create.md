@@ -1,5 +1,6 @@
 # channel_invites_create
 Create a new invite object for the channel. Only usable for guild channels. Requires the CREATE_INSTANT_INVITE permission. All JSON parameters for this route are optional, however the request body is not. If you are not sending any fields, you still have to send an empty JSON object ({}). Returns an invite object
+
 Count | Name | Type | Required        
 ----|----|----|---- 
 1 | channel_id | Snowflake | True
