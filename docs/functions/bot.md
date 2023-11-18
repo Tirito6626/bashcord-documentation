@@ -1,2 +1,2 @@
 # bot 
- username=${1} avatar=${2} json='{ "username": "'"$username"'", "avatar":"'"$avatar"'"}' application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}' application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}' guild_id=${2} user_id=${2} json='"{"recipient_id":"'"$user_id"'"}'
+Returns the application object associated with the requesting bot user.

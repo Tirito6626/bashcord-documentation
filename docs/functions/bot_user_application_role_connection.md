@@ -1,2 +1,5 @@
 # bot_user_application_role_connection 
- application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}' application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}'
+Returns the application role connection for the user. Requires an OAuth2 access token with role_connections.write scope for the application specified in the path.
+ Count | Name | Type | Required        
+----|----|----|----
+ 1 | application_id | Snowflake | True

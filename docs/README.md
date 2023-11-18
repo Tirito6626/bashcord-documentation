@@ -8,9 +8,9 @@
 - Easy to install
 - 2000 lines of bash, few lines of JS
 ## Requirements:
-- [jq](https://jqlang.github.io/jq/download/)
-- [nodejs](https://github.com/nodesource/distributions) 
-- [bash](https://www.gnu.org/software/bash/)
+* [jq](https://jqlang.github.io/jq/download/)
+* [nodejs](https://github.com/nodesource/distributions) 
+* [bash](https://www.gnu.org/software/bash/)
 # Installation
 To install code, run this:
 ```php

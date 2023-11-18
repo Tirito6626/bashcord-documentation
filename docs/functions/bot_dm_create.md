@@ -1,2 +1,8 @@
-# bot_dm_create 
- user_id=${2} json='"{"recipient_id":"'"$user_id"'"}'
+# bot_dm_create
+Create a new group DM channel with multiple users
+
+ Count | Name | Type | Required        
+----|----|----|----
+ 1 | user_id | Snowflake | True
+
+

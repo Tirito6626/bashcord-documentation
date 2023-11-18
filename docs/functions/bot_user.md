@@ -1,2 +1,2 @@
 # bot_user 
- username=${1} avatar=${2} json='{ "username": "'"$username"'", "avatar":"'"$avatar"'"}' application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}' application_id=${1} platform_name=${2} platform_username=${3} metadata=${4} json='{ "platform_name": "'"$platform_name"'", "platform_username":"'"$platform_username"'", "metadata": ['"$metadata"']}'
+Returns the user object of the requester's account
