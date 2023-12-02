@@ -3,4 +3,4 @@ Delete a channel, or close a private message. Requires the MANAGE_CHANNELS permi
 
  Count | Name | Type | Required        
  ----|----|----|----
-1 | channel_id | Snowflake | True
+ 1 | channel_id | Snowflake | True
