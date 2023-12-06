@@ -5,4 +5,4 @@ Generally bots should not use this route. However, if a bot is responding to a c
 
 Count | Name | Type | Required        
 ----|----|----|----
-channel_id | Snowflake | True
+1 | channel_id | Snowflake | True
