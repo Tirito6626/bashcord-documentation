@@ -4,5 +4,5 @@ Returns archived threads in the channel that are of type PRIVATE_THREAD, and the
 Count | Name | Type | Required        
 ----|----|----|---- 
 1 | channel_id | Snowflake | True
-2 | before=${2} | Snowflake | False
-3 | limit=${3} | Integer | False
+2 | before | Snowflake | False
+3 | limit | Integer | False
