@@ -1,2 +1,8 @@
 # channel_threads_archived_private 
- channel_id=${1} before=${2} limit=${3} json='{"before":"'"$before"'","limit":'"$limit"'}' channel_id=${1} before=${2} limit=${3} json='{"before":"'"$before"'","limit":'"$limit"'}'
+Returns archived threads in the channel that are of type PRIVATE_THREAD. Threads are ordered by archive_timestamp, in descending order. Requires both the READ_MESSAGE_HISTORY and MANAGE_THREADS permissions
+
+Count | Name | Type | Required        
+----|----|----|----
+1 | channel_id | Snowflake | True
+2 | before | Timestamp | False 
+3 | limit | Integer | False
