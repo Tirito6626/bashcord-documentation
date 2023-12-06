@@ -7,6 +7,6 @@ Count | Name | Type | Required
 ----|----|----|---- 
 1 | channel_id | Snowflake | True
 2 | message_id | Snowflake | True
-3 | name | True
-4 | auto_archive_duration | True 
-5 | rate_limit_per_user | False
+3 | name | String | True
+4 | auto_archive_duration | Integer | True 
+5 | rate_limit_per_user | Integer | False

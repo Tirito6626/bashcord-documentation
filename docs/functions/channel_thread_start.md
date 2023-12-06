@@ -1,2 +1,11 @@
 # channel_thread_start 
- channel_id=${1} name=${2} auto_archive_duration=${3} rate_limit_per_user=${4} json='{ "name": "'"$name"'", "auto_archive_duration": "'"$auto_archive_duration"'", "rate_limit_per_user": "'"$rate_limit_per_user"'" }'
+Creates a new thread that is not connected to an existing message. Returns a channel on success, and a 400 BAD REQUEST on invalid parameters
+
+Count | Name | Type | Required        
+----|----|----|---- 
+1 | channel_id | Snowflake | True
+2 | name | String | True
+3 | auto_archive_duration | Integer | False
+4 | type | Integer | False
+5 | invitable | Boolean | False 
+4 | rate_limit_per_user | Integer | False
