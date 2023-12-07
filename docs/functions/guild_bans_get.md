@@ -1,2 +1,6 @@
 # guild_bans_get 
- guild_id=${1}
+Returns a list of ban objects for the users banned from this guild. Requires the BAN_MEMBERS permission
+
+Count | Name | Type | Required        
+----|----|----|----
+1 | guild_id | Snowflake | True
