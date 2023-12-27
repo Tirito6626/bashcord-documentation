@@ -3,7 +3,7 @@
 - **Getting started**
 
 * [Main page](/)
-
+* [Reference](reference.md)
 
 - **Functions**
  * [bot](functions/bot.md)
